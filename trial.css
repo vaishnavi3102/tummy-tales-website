@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* FIRST PAGE */
+#first_page {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-image: url(./ASSETS/LOGO.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(142, 59, 59, 0.24) 3px 3px 2px;
+}
+
+nav {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+#nav_one {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 160px;
+  width: 260px;
+}
+
+#nav_two {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 350;
+  color: white;
+}
+
+#nav_three {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  position: relative;
+  color: white;
+}
+
+.fa-cart-shopping {
+  font-size: 25px;
+}
+
+#cart_items {
+  color: black;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  top:-7px;
+  left:45px;
+  font-weight: 550;
+  background-color: white;
+}
+
+#price {
+  font-size: 18px;
+}
+#order{
+  height:28px;
+  width: 90px;
+
+}
+
+/* SECOND PAGE */
+#second_page {
+  margin: 50px;
+}
+
+#article_one {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  color: rgb(185, 68, 68);
+  text-shadow: rgba(0, 0, 0, 0.612) 0px 3px 8px;
+}
+
+#article_two {
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card_container {
+  height: 440px;
+  width: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(179, 93, 93, 0.24) 0px 3px 8px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.food_img {
+  height: 50%;
+  width: 90%;
+  transition: all 0.2s 0s ease;
+}
+
+.food_img:hover {
+  scale: 1.08;
+}
+
+.food_title {
+  font-size: 18px;
+}
+
+.food_desc {
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+
+.price_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.food_price {
+  font-weight: 550;
+  font-style: italic;
+}
+
+.food_quantity {
+  font-size: 18px;
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-minus,
+.fa-plus {
+  border: 1px solid black;
+  font-size: 10px;
+  padding: 4px;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  margin: 5px;
+}
+
+/* THIRD PAGE */
+#menu_one,
+#menu_two {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* FOURTH PAGE */
+#fourth_page {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 100px;
+}
+
+#fourth_one {
+  height: 15vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#fourth_one>h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  color: rgb(185, 68, 68);
+  text-shadow: rgba(0, 0, 0, 0.612) 0px 3px 8px;
+}
+
+#fourth_two {
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+#fourth_two>h3 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+#fourth_two>p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  color: grey;
+}
+
+#fourth_three {
+  height: 65vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+#fourth_three_one {
+  height: 50vh;
+  width: 40vw;
+}
+
+#fourth_three_one>img {
+  height: 50vh;
+  width: 40vw;
+  padding: 20px 20px;
+  border-radius: 50px;
+}
+
+#fourth_three_two {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+#fourth_three_two>h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#fourth_three_two>p {
+  padding: 10px;
+  color: rgb(57, 55, 55);
+  font-style: italic;
+}
+
+/* FIFTH PAGE */
+#fifth_page {
+  height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#fifth_page_one {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#fifth_page_one>h2 {
+  height: 15%;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: rgb(185, 68, 68);
+  text-shadow: rgba(0, 0, 0, 0.612) 0px 3px 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+#fifth_page_one>form {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-right: 100px;
+}
+
+#fifth_page_one>form>input {
+  padding: 7px 10px;
+  width: 70%;
+}
+
+#fifth_page_two {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[type="submit"] {
+  background-color: rgb(209, 51, 51);
+  color: white;
+  font-weight: 800;
+  border-radius: 10px;
+  border: none;
+}
+
+iframe {
+  height: 270px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: rgba(179, 93, 93, 0.24) 10px 10px 8px;
+}
+
+/* SIXTH PAGE */
+#sixth_page {
+  height: 60vh;
+  margin-top: 100px;
+}
+
+#sixth_page_one {
+  height: 80%;
+  color: aliceblue;
+  background-color: rgb(9, 9, 61);
+  display: flex;
+}
+
+#sixth_page_one_one {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#sixth_page_one_two {
+  flex-basis: 30%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#sixth_page_one_three {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#sixth_page_one_one>h2,
+#sixth_page_one_two>h2,
+#sixth_page_one_three>h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+#sixth_page_one_one>p,
+#sixth_page_one_two>p,
+#sixth_page_one_three>p {
+  font-style: italic;
+}
+
+#sixth_page_two {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background-color: rgb(9, 9, 61);
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  #nav_one, #nav_two, #nav_three {
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  #logo {
+    height: 120px;
+    width: 200px;
+  }
+
+  #nav_two {
+    /* flex-direction: column; */
+    gap: 15px;
+  }
+
+  #nav_three {
+    gap: 20px;
+  }
+
+  #cart_items {
+    top: -8px;
+    left:21px;
+  }
+
+  #second_page {
+    margin: 20px;
+  }
+
+  #article_two {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #menu_one, #menu_two {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #fourth_page {
+    height: auto;
+    margin-top: 50px;
+  }
+
+  #fourth_three {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #fourth_three_one, #fourth_three_two {
+    width: 80vw;
+    height: auto;
+  }
+
+  #fourth_three_one>img {
+    width: 80vw;
+    height: auto;
+  }
+
+  #fifth_page {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #fifth_page_one, #fifth_page_two {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+
+  #fifth_page_one>form {
+    margin-top:15px;
+    padding-right: 0;
+    padding-left:20px;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #fifth_page_one>form>input {
+    width: 90%;
+  }
+
+  iframe {
+    width: 90%;
+    height: 200px;
+  }
+
+  #sixth_page {
+    height: auto;
+  }
+
+  #sixth_page_one {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #sixth_page_one_one, #sixth_page_one_two, #sixth_page_one_three {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  #logo {
+    height: 100px;
+    width: 150px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  #cart_items {
+    top: -8px;
+    left:21px;
+  }
+
+  #menu {
+    font-size: 40px;
+    padding: 40px;
+  }
+
+  .card_container {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .food_img {
+    height: 40%;
+  }
+
+  .food_desc {
+    font-size: 16px;
+  }
+
+  #fourth_one>h1 {
+    font-size: 40px;
+  }
+
+  #fourth_two>h3 {
+    font-size: 24px;
+  }
+
+  #fourth_three_two>h2 {
+    font-size: 18px;
+  }
+
+  #fifth_page_one>h2 {
+    font-size: 24px;
+  }
+
+  #sixth_page_one_one>h2, #sixth_page_one_two>h2, #sixth_page_one_three>h2 {
+    font-size: 24px;
+  }
+
+  #sixth_page_two {
+    font-size: 16px;
+  }
+}
+
+
+/* !traial */
+/* 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: black;
+}
+
+#confirmOrder {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#confirmOrder:hover {
+    background-color: #333;
+} */
